@@ -1,13 +1,21 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+var data = require('./data.js');
 
-app.get('/', function (req, res) {
-   res.send('Hello World');
+//var app = require('../frontend/src/App.js')
+
+
+
+app.get('/api/products', (req, res) =>{
+    res.send(data.products);
 })
 
-var server = app.listen(5000, function () {
-   var host = server.address().address
-   var port = server.address().port
-   
-   console.log("Example app listening at http://localhost:5000", host, port)
-})
+
+app.get('/', (req, res) =>{
+    res.send('Server is ready');
+});
+
+app.listen(5000, () =>{
+    console.log('Serve at http://localhost:5000');
+});
+    
