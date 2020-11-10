@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Blackscure/Amazona#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "es6-shim": "^0.35.6",
     "express": "^4.17.1"
   }
 }
