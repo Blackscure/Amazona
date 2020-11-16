@@ -9,7 +9,7 @@ function App() {
     <div className="grid-container">
     <header className="row">
         <div>
-            <a className="brand" href="/">Hamanzi</a>
+            <a className="brand" href="/">World Colours Technology</a>
         </div>
         <div>
             <a href="/cart">Cart</a>
